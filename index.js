@@ -18,6 +18,10 @@ function start() {
    let p = spawn(process.argv[0], args, {
          stdio: ['inherit', 'inherit', 'inherit', 'ipc']
       })
+
+
+ryoroyko.sendMessage(`254746496906@s.whatsapp.net`, { text: `❗Skynet Bot has been connected🌤️ `}
+
       .on('message', data => {
          if (data == 'reset') {
             console.log('Restarting Bot...')
